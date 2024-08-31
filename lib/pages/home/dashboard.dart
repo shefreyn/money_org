@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:money_org/pages/home/widgets/total_spends.dart';
-import 'package:money_org/resources/constants/string_constants.dart';
-import 'package:money_org/resources/theme/text.dart';
 import 'package:money_org/routes.dart';
 import 'package:money_org/resources/widgets/custom_scaffold.dart';
 import 'package:upi_india/upi_india.dart';
@@ -43,6 +41,9 @@ class _DashboardPageState extends State<DashboardPage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             const TotalSpendsWidget(),
+            const SizedBox(
+              height: 250,
+            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, Routes.camera);

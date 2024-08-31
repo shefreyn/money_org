@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 /// Wrapped with a Safe Area
+// ignore: must_be_immutable
 class CustomScaffold extends StatefulWidget {
   /// Custom Widget for Scaffold
   CustomScaffold({super.key, required this.body, this.backgroundColor});

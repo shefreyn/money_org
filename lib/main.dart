@@ -1,4 +1,3 @@
-import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:money_org/pages/camera/camera.dart';
 import 'package:money_org/pages/home/dashboard.dart';

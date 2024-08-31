@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'package:upi_india/upi_india.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 class CameraPage extends StatefulWidget {
@@ -12,9 +11,9 @@ class CameraPage extends StatefulWidget {
 }
 
 class _CameraPageState extends State<CameraPage> with WidgetsBindingObserver {
+  // required options for the scanner
   final MobileScannerController controller = MobileScannerController(
     facing: CameraFacing.front,
-    // required options for the scanner
   );
   UpiIndia upiIndia = UpiIndia();
   List<UpiApp>? apps;
